@@ -1,0 +1,452 @@
+/*GENERAL*/
+body{
+    font-family: 'Assistant', sans-serif;
+    font-size: 2em;
+    
+    
+}
+
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: bold;
+}
+
+
+section .heading{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.redDivider{
+    background: #131e74;
+    width: 100px;
+    margin: 0 auto;
+    height: 5px;
+}
+
+section{
+    padding: 45px 0 80px 0;
+    border-radius: 3px;;
+    background: white;
+    
+}
+
+.heading h2{
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+/*LANGUE*/
+#choixLang a{
+    padding: 15px;
+    float: right;
+    text-decoration: none;
+}
+
+/*ABOUT*/
+#about{
+    padding-top: 100px;
+    background: #4857cb;
+    margin-top: 20px;
+    margin-bottom : 0px;
+    /* position: sticky;
+    top : 0;
+    z-index: -1; 
+    On perd le hover avec ca. Si je le rajouter je dois changer le hover et le faire en javascript
+    */
+    
+}
+
+
+#about .heading{
+    text-align: center;
+    padding: 0px;
+}
+
+#about .heading h1{
+    color: white;
+    text-transform: uppercase;
+}
+
+#about .heading h3{
+    color:black;
+    
+}
+
+.button1{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    border: 1px solid white;
+    margin-top: 20px;
+    padding: 18px 50px;
+    border-radius: 3px;
+    display: inline-block;
+    transition : all 0.3s ease-in 0s;
+}
+
+.button1:hover{
+    background-color: white;
+    color: #131e74;
+    text-decoration: none;
+}
+
+.profilePicture{
+    text-align: center;
+    margin: 0 auto;
+    float : none;
+    margin-bottom: 20px;
+   
+   
+}
+
+#about img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 0% 40%;
+}
+#photoCVAxel{
+transition : all 0.3s ease-in 0s;
+max-height: 1000px;
+width: auto;
+}
+#photoCVAxel:hover{
+    max-height: 1000px;
+    cursor: pointer;
+    box-shadow: 2px 20px 38px rgba(0, 0, 0, 0.9);
+    margin: 15px auto;
+}
+
+
+.description{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 1.3em !important;
+    line-height: 1.5em;
+    color: black;
+}
+
+
+
+/*SKILLS*/
+#skills .heading h2{
+    color: #030937;
+}
+
+
+/*EXPERIENCE*/
+#experience{
+    background: #4857cb;
+    text-align: justify;
+    
+}
+
+.whiteDivider{
+    background: white;
+    width: 100px;
+    margin: 0 auto;
+    height: 5px;
+}
+
+#experience .heading h2{
+    color: white;
+}
+
+.timeline{
+    padding: 30px 10px;
+    position: relative;
+    
+}
+
+.timeline::before{
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 5px;
+    background-color: #333;
+    left:50%;
+    margin-left: -2,5px;
+}
+
+.timeline > li{
+    margin-bottom: 20px;
+    position: relative;
+}
+
+
+.timeline > li:after {
+    clear: both;
+    
+}
+
+
+.timeline > li:before, .timeline > li:after{
+    content: " ";
+    display: table;
+}
+
+
+.timeline li .timelineBadge{
+    color: #131e74;
+    width: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left:50%;
+    margin-left: -25px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.timeline-panel-container{
+    width: 50%;
+    float: left;
+}
+
+.timeline-panel-container-inverted {
+    width: 50%;
+    float: right;
+    
+}
+
+.timeline-panel{
+    width: 90%;
+    float: right;
+    margin-right: 40px;
+    border: 1px solid #d4d4d4;
+    border-radius:  7px;
+    padding: 20px 25px;
+    position: relative;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.175);
+    background: white;
+}
+
+
+.timeline-panel-container-inverted .timeline-panel{
+    float: left;
+    margin-left: 40px; 
+}
+
+.timeline-heading{
+     overflow-wrap: break-word;
+}
+
+
+
+/* EDUCATION */
+#education .heading h2{
+    color: #030937;
+}
+
+.education-block{
+    width: 80%;
+    margin: 0 auto;
+    padding : 30px;
+    text-align: center;
+    background: #ddd;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    margin-bottom: 20px; 
+    font-weight: bold;
+    transition : all 0.2s ease-in 0s;
+}
+
+
+.education-block:hover{
+    /* box-shadow: 20px 20px 8px rgba(0, 0, 0, 0.4); */
+    box-shadow: 2px 20px 38px rgba(0, 0, 0, 0.9);
+    margin: 15px auto;
+    padding: 25px;
+    width : 100%;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.education-block h5{
+    color: #888;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.education-block .glyphicon {
+    font-size: 40px;
+}
+
+.education-block h3, .education-block h4{
+    color: #131e74; 
+}
+
+
+.education-block ul {
+    list-style: square;
+    text-align: left;
+    line-height: 1.6em;
+}
+.education-block a{
+    color: #131e74;
+    text-decoration: underline;
+}
+
+.education-block a:hover{
+    color: #131ec4;
+}
+/*Modif externe*/
+
+.flexbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition : all 0.3s ease-in 0s;
+
+}
+.texte{
+    margin : auto;
+    display: none;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+#texteDisplay{
+    margin :20px auto;
+    
+    padding: 10px;
+    
+}
+
+.texte > h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.texte > p{
+    text-justify: auto;
+    width: 80%;
+    margin: 0 auto;
+}
+
+canvas{
+    margin : 20px auto;
+    padding: 20px;
+}
+
+canvas:hover{
+    cursor: pointer;
+    
+}
+
+.flexbox:hover{
+    box-shadow: 10px 10px 10px 8px rgba(0, 0, 0, 0.6);
+    
+}
+
+
+.thumbnail{
+    filter: grayscale(1);
+    transition : all 0.2s ease-in 0s;
+}
+
+.thumbnail:hover{
+    filter: grayscale(0);
+    width: 100%;
+    margin: 15px auto;
+    box-shadow: 10px 10px 8px rgba(0, 0, 0, 0.6);
+    position : relative;
+    z-index: 1;
+    
+}
+
+/*FOOTER*/
+footer{
+    background: black;
+    font-size: 0.75em;
+    font-family: 'Assistant', sans-serif;
+    color: aliceblue;
+    width: 100%;
+    padding-top: 1%;
+    
+}
+
+.footer > .row{
+    margin: 0 auto;
+    
+}
+
+/*navbar*/
+.navbar{
+    background: #4857cb;
+    margin: 0 auto;
+    padding: 10px;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 18px 20px 15px rgba(0,0,0,0.5);
+}
+
+.navbar .navbar-nav{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+    
+}
+
+.navbar .navbar-collapse{
+    text-align: center;
+}
+.navbar li a, #choixLang a{
+    color: white !important;
+}
+
+.navbar-nav li a:hover, navbar-nav li.active a, #choixLang a:hover{
+    color: #131e74 !important;
+    background-color: white !important;
+    border-radius: 5px;
+}
+
+.navbar-default .navbar-toggle{
+    
+    border-style: none;
+}
+
+.icon-bar{
+    background-color: white !important;
+}
+
+
+
+
+/*PORTFOLIO*/
+
+#portfolio .heading h2{
+    color: white;
+    
+}
+
+#portfolio {
+    background: #131e74;
+}
+
+
+
+
+
+
+
+
+
+
+
+

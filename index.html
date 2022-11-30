@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300&display=swap" rel="stylesheet">         
+    
+    
+    <link rel="stylesheet" href="monSite/Css/axelcvCss.css">
+    <script src="monSite/Javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <title>Twagirayezu Axel</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <span id="choixLang"><a href="indexEN.html">EN</a></span>
+                <ul class="nav navbar-nav">
+                    <!-- <li><a href="#about">Moi</a></li> -->
+                    <li><a href="#skills&education">Compétences</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="about">
+        <div class="col-xs-8 col-md-4 profilePicture">
+            <a href="#" data-toggle="tooltip"  data-placement="right" title="Cliquez pour en savoir plus sur moi!"><img src="monSite/img/photo_cv_Juin2020.jpg" alt="Photo_de_mon_CV" id="photoCVAxel" ></a> 
+        </div>
+        
+        <div class="heading">
+            <h1>Twagirayezu Axel</h1>
+            <h3>Curiculum Vitae</h3>
+            <!--  DESCRIPTION PERSONNELLE -->
+            <p class="description" style="display: none; color: lightgrey;" id="descript"> Je suis un homme de 24 ans très dynamique et
+                ambitieux, efficace et minutieux dans mon travail.
+                Je suis curieux et j'aime les ambiance où les
+                idées s'échangent facilement ce qui aide à mon développement personnel et
+                au développement professionnel en général.
+                Je crois en l'importance de la bonne
+                communication et organisation sur le lieux de
+                travail.
+            </p>     
+            <a href="monSite/img/Twagirayezu_Axel_CV_2021.pdf"class="button1">Télécharger CV</a>     <!-- PDF DU CV -->
+        </div>
+    </section>
+    
+    <section id="skills&education">
+        <div class="redDivider"></div>
+        <div class=heading >
+            <h2>compétence</h2>
+        </div>
+        <div class="container-fluid">
+            <div> 
+                <canvas id="myChart" width="3" height="1" >
+                </canvas>
+            </div>
+            <div id="texteDisplay">
+                <div class="texte" id="HTML">
+                    <h3>Conception de site web </h3>
+                    <p>                    
+                        Langage de balisage, que j'ai appris premièrement à la haute ecole Ephec Louvain-la-Neuve et que j'ai approfondis de manière autonome grâce aux cours digital connu tel que openClassroom et Udemy, qui visent un profil autodidacte et indépendant<br>
+                        Je peux maintenant créer et modifier un site web statique. J’ai appris à utiliser les balises adéquates pour les éléments adéquats,ce qui est très utile pour obtenir un site web optimisé, légé et référencé efficacement dans les moteurs de recherches.
+                    </p>
+                </div>
+                
+                <div class="texte" id="CSS">
+                    <h3>Conception de site web </h3>
+                    <p>                    
+                        Ce langage me permet de mettre en forme les site web codés grâce au HTML, de modifier l'apparence du site et de la totalités des  éléments du site, de la couleur de fond à l'apparence d'un élément au moment ou l'utilisateur le survole avec la souris.<br>
+                        J'ai d'abord eu des connaissance de bases en CSS à la haute école Ephec Louvain-la-Neuve que j'ai pu approfondir de manière autonome grâce aux cours digital connu tel que udemy et openclassroom, qui visent un profil autodidacte et indépendant.
+                    </p>
+                </div>
+                
+                <div class="texte" id="JAVASCRIPT">
+                    <h3>Dynamisation de site web</h3>
+                    <p>                    
+                        Ce langage permet de dynamiser une page web; il indique à  la page quel action effectuer. Il permet de modifier l'emplacement, la forme et le contenu de la page web ou d'une partie de la page web selon la demande de l'utilisateur.<br>
+                        Javascript permet ainsi d'obtenir des pages qui ne restent pas figées mais qui interagissent avec l’utilisateur en fonction de sa demande pour les rendre plus dynamiques.<br>
+                        J'ai d'abord eu des connaissance de bases en Javascript à la haute école Ephec Louvain-la-Neuve que j'ai pu approfondir de manière autonome grâce aux cours digital connu tel que udemy et openclassroom, qui visent un profil autodidacte et indépendant
+
+                    </p>
+                </div>
+                
+                <div class="texte" id="SQL">
+                    <h3>Gestion de base de données  </h3>
+                    <p>                    
+                        SQL est un langage qui permet d'utiliser les bases de données relationnelles et leur contenu (les données) pour les afficher sur une pages web.<br>
+                        Je suis capable d’utiliser les éléments d’une base de données et de la mettre à jour, de l’implémenter ou de supprimer ses éléments.<br>
+                        Je peux également utiliser ces éléments, ces données pour les utiliser sur un site web dynamique, pour modifier la page ou les données lorsque l’utilisateur, le client en fait la demande.
+
+                    </p>
+                </div>
+                
+                <div class="texte" id="JQUERY">
+                    <h3>Dynamisation de site web </h3>
+                    <p>                    
+                        JQuery est une bibliothèque Javascript qui facilite l'écriture de scripts des pages web. En d'autre mots il fonctionne comme le langage Javascript mais en simplifié. Il permet lui aussi de dynamiser des pages web en écrivant moins de code, et est plus compatible entre les différents navigateurs.
+                    </p>
+                </div>
+                
+                <div class="texte" id="PHP">
+                    <h3>Dynamisation de site web et Gestion de base de données</h3>
+                    <p>
+                        Je suis capable d'envoyer des instructions, envoyer ou recevoir les informations d'un serveur.<br>
+                        Le langage PHP m'a été utile pour dynamiser un site web en le mettant en relation avec une base de données.<br>
+                        Je peux avec PHP dialoguer avec une base de donnée et lui envoyer diverses requêtes dont les réponses se retrouveront en tant que contenu dans mon site web.
+                        Le contenu des pages se met à jour automatiquement grace aux données de la base de données, ce qui est très pratique lorsqu'on a plusieurs page à gérer, comme c'est souvent le cas.
+                    </p>
+                </div>
+            
+            
+            </div>
+    </div> 
+        
+    </section>
+    
+    <section id="experience">
+        <div class="container">
+            <div class="whiteDivider"></div>
+            <div class="heading">
+                <h2>Experience professionnel</h2>
+            </div>
+            <div >
+                <ul class="timeline">
+                    <li>
+                        <div class="timelineBadge"> <span class="glyphicon glyphicon-briefcase"></span></div> <!-- image valise-->
+                        <div class="timeline-panel-container"> <!-- case blanche -->
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Ceratizit Luxembourg</h3>
+                                    <h4> Employé polyvalent</h4>
+                                    <p class="text-muted"><span class="glyphicon glyphicon-time"></span>
+                                        2018
+                                    </p>
+                                </div>
+                                <div class="timeline-body"> <!-- timeline body, tjs dans la case blanche-->
+                                    <p>Vérification de la conformité des pièces </p>
+                                    <p>Aide manuelle</p>
+                                    <p>Tri </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                        <div class="timelineBadge"> <span class="glyphicon glyphicon-briefcase"></span></div> <!-- image valise-->
+                        <div class="timeline-panel-container-inverted"> <!-- case blanche -->
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Brown Brothers Harriman Luxembourg</h3>
+                                    <h4>  Travail de bureau </h4>
+                                    <p class="text-muted"><span class="glyphicon glyphicon-time"></span>
+                                        2017
+                                    </p>
+                                </div>
+                                <div class="timeline-body"> <!-- timeline body, tjs dans la case blanche-->
+                                    <p>Mise en route de macros</p>
+                                    <p>Classement de dossier administratif</p>
+                                    <p> Mise à jour de
+                                        documents administratifs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                
+                <li>
+                        <div class="timelineBadge"> <span class="glyphicon glyphicon-briefcase"></span></div> <!-- image valise-->
+                        <div class="timeline-panel-container"> <!-- case blanche -->
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>DEGROOF LUXEMBOURG</h3>
+                                    <h4> Administration</h4>
+                                    <p class="text-muted"><span class="glyphicon glyphicon-time"></span>
+                                        2015
+                                    </p>
+                                </div>
+                                <div class="timeline-body"> <!-- timeline body, tjs dans la case blanche-->
+                                    <p>Classement de dossier administratif</p>
+                                    <p>Archivage de dossiers cloturés</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+    </section>
+    
+    <section id="education">
+        <div class="redDivider"></div>
+            <div class=heading >
+                <h2>Education</h2>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="education-block">
+                        <h5>2016-2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Ephec Louvain-La-Neuve</h3>
+                        <h4> Etudes de Technologie de l'Informatique</h4>
+                        <ul>
+                            <li><p>Conception de sites Web (débutant; HTML, CSS)</p></li>
+                            <li><p>Infrastructure réseau de base</p></li>
+                            <li><p>Introduction aux base de données et aux système de gestion de base de données</p></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="education-block">
+                        <h5>Aout 2020</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>OpenClassrooms</h3>
+                        <h4> Formation HTML5 et CSS3</h4>
+                        <ul>
+                            <li><p>Structurer une page web en HTML</p></li>
+                            <li><p>Mettre en forme et organiser les éléments d' une page web en CSS</p></li>
+                            <li><p>Adapter une page pour la rendre responsive</p></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="col-sm-4">
+                    <div class="education-block">
+                        <h5>Fevrier 2021</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Udemy</h3>
+                        <h4>Formation développeur web</h4>
+                        <ul>
+                            <li><p>Conception de sites web</p></li>
+                            <li><p>Dynamisation de sites web (JavaScript, Jquery)</p></li>
+                            <li><p>Framework (Bootsrtap, Bootsnipp) </p></li>
+                            <li><p>WordPress</p></li>
+                            <li><p>Mise en relation d'un site web avec une base de données </p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="footer container-fluid">
+            <div class="row" align="center">
+                
+                <div class="col-sm-4">
+                    <p>e-Mail: twaaxe@gmail.com</p>
+                </div>
+                <div class="col-sm-4">
+                    <p> <a href="https://be.linkedin.com/in/axel-twagirayezu-799b021b1/en-us"> <br> <strong>Linkedin</strong> de Twagirayezu Axel</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Téléphone: +32/488.46.57.86</p>
+                    <p>Twagirayezu Axel</p>
+                </div>
+                
+                
+                
+                
+            </div>
+            <div class="row" align="right">
+                <a href="#about">
+                    <span class="glyphicon glyphicon-chevron-up" ></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+

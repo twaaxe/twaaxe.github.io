@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap" rel="stylesheet">  
+    
+    
+    <link rel="stylesheet" href="monSite/Css/axelcvCss.css">
+    <script src="monSite/Javascript/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <title>Twagirayezu Axel</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <span id="choixLang"><a href="index.html">FR</a></span>
+                <ul class="nav navbar-nav">
+                    <!-- <li><a href="#about">Moi</a></li> -->
+                    <li><a href="#skills&education">Compétences</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    
+    <section id="about" >
+        <div class="col-xs-8 col-md-4 profilePicture">
+            <a href="#" data-toggle="tooltip"   data-placement="right" title="Click to get more about me!"><img src="monSite/img/photo_cv_Juin2020.jpg" alt="Photo_de_mon_CV" id="photoCVAxel" ></a> 
+        </div>
+        
+        <div class="heading">
+            <h1>Twagirayezu Axel</h1>
+            <h3>Curiculum Vitae</h3>
+            <!--  DESCRIPTION PERSONNELLE -->
+            <p class="description" style="display: none; color: lightgrey;" id="descript"> I am a 24 years old man dynamic and ambitious, effective and meticulous in my work. I am curious and like working atmosphere were ideas are easily exchanged wich help my personnal growth and professional development in general.
+            I belive in great value of good communication and a good organisation on the workplace to complete the work efficiently.
+
+            </p>     
+            <a href="monSite/img/Twagirayezu_Axel_CV_2021.pdf" class="button1">Download CV</a>     <!-- PDF DU CV -->
+        </div>
+    </section>
+    
+    <section id="skills&education">
+        <div class="redDivider"></div>
+        <div class=heading >
+            <h2>Skills</h2>
+        </div>
+        <div class="container-fluid">
+            <div>
+                <canvas id="myChart" width="3" height="1" >
+                </canvas>
+            </div>
+            <div id="texteDisplay">
+                <div class="texte" id="HTML">
+                    <h3>Website conception </h3>
+                    <p>                    
+                        Markup language, which I first learned at Ephec Louvain-la-Neuve high school and which I developed independently thanks to known digital courses such as openClassroom and Udemy, which aim for a self-taught and self-educated profile.<br>
+                        I can now create and edit a static website. I learned how to use the right tags for the right elements, which is very helpful in getting a optimized website , lightweight, and ranks effectively in search engines.
+
+                    </p>
+                </div>
+                
+                <div class="texte" id="CSS">
+                    <h3>Website conception </h3>
+                    <p>                    
+                        This language allows me to format coded websites using HTML, to modify the appearance of the web site and all of the elements in the web site, from the background color to the appearance of an element when the user hovers it with the mouse.<br>
+                        I first had basic knowledge of CSS at the Ephec Louvain-la-Neuve high school. Then I was able to deepen independently, thanks to the knowns digital courses such as udemy and openclassroom, which aim for self-taught and independent people.
+
+                    </p>
+                </div>
+                
+                <div class="texte" id="JAVASCRIPT">
+                    <h3>Website dynamisation</h3>
+                    <p>                    
+                        This language allows to dynamize a web page; it tells the page what action to perform. It allows to modify the location, form and content of the web page or part of the web page according to the user's request.<br>
+                        Javascript thus makes it possible to obtain pages which do not remain frozen but interact with the user according to his request to make them dynamic.<br>
+                        I first had basic knowledge of Javascript at the Ephec Louvain-la-Neuve high school. Then I was able to deepen independently, thanks to the knowns digital courses such as udemy and openclassroom, which aim for self-taught and independent people.
+
+                    </p>
+                </div>
+                
+                <div class="texte" id="SQL">
+                    <h3>Database Management System  </h3>
+                    <p>                    
+                        SQL is a language that allows relational databases and their content (data) to be used to display them on a web page.<br>
+                        I can use the elements of a database and update, implement or delete its elements. <br>
+                        I can also use these elements, those data to use it on a dynamic website, to modify the page or the data when the user, the customer requests it.
+                    </p>
+                </div>
+                
+                <div class="texte" id="JQUERY">
+                    <h3>Website dynamisation </h3>
+                    <p>                    
+                        JQuery is a Javascript library who ease script's writing in a web page. To sum it up, it works like a simplify version of Javascript.
+                        It allow dynamize web pages with less code to write and is more compatible with the differents web browsers.
+                    </p>
+                </div>
+                <div class="texte" id="PHP">
+                    <h3>Website dynamisation and Database Management System</h3>
+                    <p>
+                        I am able to send instructions, send or receive information from a server.<br>
+                        The PHP language was useful to me to automate a website by relating it to a database.<br>
+                        With PHP, I can dialogue with a database and send it various requests, which reponses will end up as content in my website.
+                        The content of the pages is updated automatically thanks to the data of the database, which is very practical when we have several pages to manage, as is often the case.
+                    </p>
+                </div>
+            </div>
+    </div>    
+    </section>
+    
+    <section id="experience">
+        <div class="container">
+            <div class="whiteDivider"></div>
+            <div class="heading">
+                <h2>Professional experience</h2>
+            </div>
+            <div >
+                <ul class="timeline">
+                    <li>
+                        <div class="timelineBadge"> <span class="glyphicon glyphicon-briefcase"></span></div> 
+                        <div class="timeline-panel-container"> 
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Ceratizit Luxembourg</h3>
+                                    <h4> Versatile employee</h4>
+                                    <p class="text-muted"><span class="glyphicon glyphicon-time"></span>
+                                        2018
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Verification of the parts conformity  </p>
+                                    <p>Manual aid</p>
+                                    <p>Sorting </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                    <li>
+                        <div class="timelineBadge"> <span class="glyphicon glyphicon-briefcase"></span></div> 
+                        <div class="timeline-panel-container-inverted"> 
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>Brown Brothers Harriman Luxembourg</h3>
+                                    <h4>  Office work </h4>
+                                    <p class="text-muted"><span class="glyphicon glyphicon-time"></span>
+                                        2017
+                                    </p>
+                                </div>
+                                <div class="timeline-body">
+                                    <p>Marcos initialisation</p>
+                                    <p>Administrative file classification</p>
+                                    <p> Administrative documents updating </p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    
+                
+                <li>
+                        <div class="timelineBadge"> <span class="glyphicon glyphicon-briefcase"></span></div>
+                        <div class="timeline-panel-container">
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h3>DEGROOF LUXEMBOURG</h3>
+                                    <h4> Administration</h4>
+                                    <p class="text-muted"><span class="glyphicon glyphicon-time"></span>
+                                        2015
+                                    </p>
+                                </div>
+                                <div class="timeline-body"> 
+                                    <p>Administrative file classification</p>
+                                    <p>Archiving of closed cases</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        
+        </div>
+    </section>
+    
+    <section id="education">
+        <div class="redDivider"></div>
+            <div class=heading >
+                <h2>Education</h2>
+            </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="education-block">
+                        <h5>2016-2017</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Ephec Louvain-La-Neuve</h3>
+                        <h4> Computer Science Studies</h4>
+                        <ul>
+                            <li><p>Website design (beginner; HTML, CSS)</p></li>
+                            <li><p>Basic network infrastructure</p></li>
+                            <li><p>Introduction to databases and database management systems</p></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-sm-4">
+                    <div class="education-block">
+                        <h5>August 2020</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>OpenClassrooms</h3>
+                        <h4>HTML5 and CSS3 training</h4>
+                        <ul>
+                            <li><p>Structure a web page in HTML</p></li>
+                            <li><p>Format and organize the elements of a web page in CSS</p></li>
+                            <li><p>Adapt a page to make it responsive</p></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="col-sm-4">
+                    <div class="education-block">
+                        <h5>February 2020</h5>
+                        <span class="glyphicon glyphicon-education"></span>
+                        <h3>Udemy</h3>
+                        <h4>Web developer training</h4>
+                        <ul>
+                            <li><p>Web integrator and web design (HTML, CSS, JavaScript studied in depth)</p></li>
+                            <li><p>Websites dynamisation (JavaScript, Jquery)</p></li>
+                            <li><p>Framework (Bootstrap, Bootsnipp) </p></li>
+                            <li><p>WordPress</p></li>
+                            <li><p>Automatic update a website based on data from a database</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <footer>
+        <div class="footer container-fluid">
+            <div class="row" align="center">
+                
+                <div class="col-sm-4">
+                    <p>e-Mail: twaaxe@gmail.com</p>
+                </div>
+                <div class="col-sm-4">
+                    <p> <a href="https://be.linkedin.com/in/axel-twagirayezu-799b021b1/en-us"> <br> <strong>Linkedin</strong> of Twagirayezu Axel</a></p>
+                </div>
+                <div class="col-sm-4">
+                    <p>Phone: +32/488.46.57.86</p>
+                    <p>Twagirayezu Axel</p>
+                </div>
+                
+                
+                
+                
+            </div>
+            <div class="row" align="right">
+                <a href="#about">
+                    <span class="glyphicon glyphicon-chevron-up" ></span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
