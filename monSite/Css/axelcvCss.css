@@ -433,20 +433,49 @@ footer{
 /* mediaquery */
 
 @media screen and (max-width:600px){
+    .timeline{
+        /* tout le ul donc les 3 cases  */
 
-    .timeline-panel-container-inverted {
-        width: 100%;
-        float: none;
+        /*
+        justify-content: center;
+        display: flex;
+        flex-direction:column;
+        align-items: center;    */
         
     }
 
     .timeline-panel-container {
+        /* container de la case blanche */
+        /* margin: 0 auto; */
         width: 100%;
-        float: none;
+        
     }
 
-    .timeline{
-        padding: 40px 0px ;
+    .timeline-panel{
+        /* la case blanche */
+        margin: 0  auto;
+        width: 100%;
+
+    }
+
+    .timeline-panel-container-inverted {
+        /* container de la case blanche inversee */
+        width: 100%;
+        
+        
+    }
+
+    .timeline-panel-container-inverted .timeline-panel{
+        /* la case blanche inversee */
+        margin: 0 auto;
+        width: 100%;
+        
+    }
+   
+
+
+
+    .timeline > li {
         
         
     }
