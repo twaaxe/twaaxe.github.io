@@ -428,8 +428,6 @@ footer{
     background: #131e74;
 }
 
-
-
 /* mediaquery */
 
 @media screen and (max-width:600px){
@@ -462,21 +460,12 @@ footer{
         /* container de la case blanche inversee */
         width: 100%;
         
-        
     }
 
     .timeline-panel-container-inverted .timeline-panel{
         /* la case blanche inversee */
         margin: 0 auto;
         width: 100%;
-        
-    }
-   
-
-
-
-    .timeline > li {
-        
         
     }
 
