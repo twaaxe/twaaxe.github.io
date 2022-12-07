@@ -359,6 +359,53 @@ canvas:hover{
     
 }
 
+
+/* CONTACT FORM */
+#myContactForm{
+    margin: 0 auto;
+    padding: 15% 5%;
+    background-color: #515a9d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1% auto;
+    color: white;
+    /* clip-path: ellipse(35% 40% at 50% 50%); */
+    
+}
+
+#formId{
+    border: 3px solid black;
+    
+}
+
+#formHr{
+    width: 70%;
+    overflow: clip;
+}
+
+.input:nth-child(even){
+    margin: 13% auto;  
+}
+
+.input > input {
+    margin : 6% auto;
+}
+textarea {
+    display: block;
+}
+
+input[type="submit"] {
+    background: #4857cb;
+    position: absolute;
+    left : 49%;
+}
+
+label {
+    width: 20%;
+}
+
+
 /*FOOTER*/
 footer{
     background: black;
@@ -431,20 +478,9 @@ footer{
 /* mediaquery */
 
 @media screen and (max-width:600px){
-    .timeline{
-        /* tout le ul donc les 3 cases  */
-
-        /*
-        justify-content: center;
-        display: flex;
-        flex-direction:column;
-        align-items: center;    */
-        
-    }
 
     .timeline-panel-container {
         /* container de la case blanche */
-        /* margin: 0 auto; */
         width: 100%;
         
     }
